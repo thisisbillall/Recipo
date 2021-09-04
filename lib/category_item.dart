@@ -2,17 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:recipo/category_meals_screen.dart';
 
 class CategoriItem extends StatelessWidget {
+  final String id;
   final String title;
   final Color color;
-  CategoriItem(this.title, this.color);
+  CategoriItem(this.id, this.title, this.color);
   void selectCategory(BuildContext ctx) {
-    Navigator.of(ctx).push(
-      MaterialPageRoute(
-        builder: (_) {
-          return CategoryMealScreen();
-        },
-      ),
-    );
+    Navigator.of(ctx)
+        .pushNamed('/category-meals', arguments: {'id': id, 'title': title});
   }
 
   @override
