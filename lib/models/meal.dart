@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 
-enum Complexity { Simple, Medium, Hard }
+enum Complexity { Simple, Challenging, Hard }
 enum Affordability { Affordable, Pricey, Luxurious }
 
 class Meal {
@@ -17,7 +17,7 @@ class Meal {
   final bool isGlutenFree;
   final bool isLactoseFree;
   final bool isVegan;
-  final bool isVegeterian;
+  final bool isVegetarian;
 
   const Meal({
     @required this.id,
@@ -31,7 +31,7 @@ class Meal {
     @required this.affordability,
     @required this.isGlutenFree,
     @required this.isLactoseFree,
-    @required this.isVegeterian,
+    @required this.isVegetarian,
     @required this.isVegan,
   });
 }
