@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recipo/category_meals_screen.dart';
 
 class CategoriItem extends StatelessWidget {
-  final String id;
+  final String? id;
   final String title;
   final Color color;
   CategoriItem(this.id, this.title, this.color);
