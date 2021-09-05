@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recipo/Categories_screen.dart';
-import 'package:recipo/category_meals_screen.dart';
+import 'package:recipo/screens/Categories_screen.dart';
+import 'package:recipo/screens/category_meals_screen.dart';
 
 void main() => runApp(MyApp());
 
