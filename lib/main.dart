@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:recipo/screens/Categories_screen.dart';
 import 'package:recipo/screens/category_meals_screen.dart';
 import 'package:recipo/screens/meal_detail_screen.dart';
+import 'package:recipo/screens/tab_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,10 +26,14 @@ class MyApp extends StatelessWidget {
       // home: CategoriesScreen(),
       initialRoute: '/',
       routes: {
-        '/': (ctx) => CategoriesScreen(),
+        '/': (ctx) => TabsScreen(),
         CategoryMealScreen.routeNAme: (ctx) => CategoryMealScreen(),
         MealDetails.routeName: (ctx) => MealDetails(),
       },
+      // onGenerateRoute: (settings) { when route not registered in routes table
+      //   return MaterialPageRoute(builder: (ctx))
+      // },
+      // onUnknownRoute: (settings) {return}, when onGen fails
     );
   }
 }
